@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>ViveleCinema</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+     <link rel="stylesheet" type="text/css" href="Quizz.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <header> Which top Director of the Last 20 Years are you? </header>
+   
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://thefilmstage.com/wp-content/uploads/2013/11/scorsese_lucas_spielberg_coppola.png" style="width:100%">
+    <div class="text">What is your favorite genre ?</div>
+      <div class="reponses"> 
+        <div class="col-sm-3">
+        <input type="button" value="Comedie" id="Anderson" onclick="getanswer1(4), plusSlides(1)"/>
+        </div>
+        <div class="col-sm-3">
+         <input type="button" value ="Gangster" id="Tarantino" onclick="getanswer1(2), plusSlides(1)"/>
+         </div>
+        <div class="col-sm-3">
+         <input type="button" value="Drama"  id="Fincher" onclick="getanswer1(1), plusSlides(1)"/>
+         </div>
+        <div class="col-sm-3 ">
+         <input type="button" value ="Sci-Fi" id="Nolan" onclick="getanswer1(3), plusSlides(1)"/>
+        </div>
+      </div>
+
+    </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://cdn1.thr.com/sites/default/files/imagecache/scale_crop_768_433/2014/12/Rulebreakers_Celluloid_Kings.jpg" style="width:100%">
+    <div class="text"> What's the most important in a movie?</div>
+      <div class="reponses"> 
+        <div class="col-sm-3">A complex character
+          <input type="radio"  id="character" onclick="getanswer2(1), plusSlides(1)"/>
+        </div>
+        <div class="col-sm-3"> The Symetrie of the Shot
+          <input type="radio" id="symetrie" onclick="getanswer2(4), plusSlides(1)"/>
+        </div>
+
+        <div class="col-sm-3 "> The emotion you give
+          <input type="radio" id="emotion" onclick="getanswer2(3), plusSlides(1)"/>
+        </div>
+        <div class="col-sm-3 "> The tension gave by a dialogue
+           <input type="radio" id="dialogue" onclick="getanswer2(2), plusSlides(1)"/>
+        </div>
+      </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="http://www.indiewire.com/wp-content/uploads/2011/11/director20roundup.jpg" style="width:100%">
+    <div class="text">What would be "the perfect shot" like ?</div>
+      <div class="reponses"> 
+        <div class="col-sm-3">From the trunk of car
+          <input type="checkbox" id="trunk" onclick="getanswer3(2), plusSlides(1)"/>
+
+        </div>
+        <div class="col-sm-3"> One illustrating our mind working
+           <input type="checkbox" id="mind" onclick="getanswer3(3), plusSlides(1)"/>
+
+        </div>
+        <div class="col-sm-3"> A long shot showing the full context
+           <input type="checkbox" id="context" onclick="getanswer3(1), plusSlides(1)"/>
+        
+        </div>
+
+        <div class="col-sm-3"> A flat space camera move
+           <input type="checkbox" id="flat" onclick="getanswer3(4), plusSlides(1)"/>
+        </div>
+      </div>
+  </div>
+
+
+    <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/01/06/17/THR_Directors_1_THR_Director_group_02.jpg" style="width:100%">
+    <div class="text">Which one is yout favorite character?</div>
+      <div class="reponses"> 
+        <div class="col-sm-3 Fincher"> 
+          <input class= img-rep type="image" src="https://i.pinimg.com/736x/a3/b2/7d/a3b27d91923b4955bcc86e7ae87dfcd3--fight-club--tyler-durden.jpg" class="fincher" id="BradP" onclick="getanswer4(1), plusSlides(1)"/>
+
+        </div>
+        <div class="col-sm-3 Tarantino"> <input class= img-rep type="image" src="https://i.pinimg.com/736x/f3/91/59/f39159d2fde597315f6f538b37b2b270--lost-art-film-stills.jpg" class="Tarantino" id="SamL" onclick="getanswer4(2), plusSlides(1)"/>
+         
+        </div>
+
+        <div class="col-sm-3 Anderson"> <input class= img-rep type="image" src="https://i.pinimg.com/originals/27/4e/75/274e7586e11a77dc312c7c3f9b7ab64c.jpg" class="Tarantino" id="BillM" onclick="getanswer4(4), plusSlides(1)"/>
+        
+        </div>
+
+        <div class="col-sm-3 Nolan"> <input class= img-rep type="image" src="memento.jpg" class="Tarantino" id="GuyP" onclick="getanswer4(3), plusSlides(1)"/>
+        </div>
+      </div>
+  </div>
+
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="http://www.popfixion.fr/upload/news/unes/20161002_195837a1.jpg" style="width:100%">
+    <div class="text">What would you like to hear?</div>
+      <div class="reponses"> 
+        
+          <input type="submit" value="Where is my mind ? - Pixies" id="Pixies" onclick="getanswer5(1), plusSlides(1)"/>
+
+
+          <input type="submit" value="Zyggy Stardust - Seu Jorge" id="Seu" onclick="getanswer5(4), plusSlides(1)"/>
+
+          <input type="submit" value="Like a Virgin - Madonna" id="Madonna" onclick="getanswer5(2), plusSlides(1)"/>
+
+
+          <input type="submit" value="Some Hans Zimmer" id="Zimmer" onclick="getanswer5(3), plusSlides(1)"/>
+
+      </div>
+  </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    
+    <div  id="finaltext" class="text">Text</div>
+      <div class="finalresult"> 
+        
+          <img id= "finalimg" src="" style="width:100%">
+          
+      </div>
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+
+</div>
+
+
+
+<script type="text/javascript" src="Quizz.js"></script>
+
+</body>
+
+</html>
